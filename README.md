@@ -39,3 +39,20 @@ flowchart TD
     USER -->|OIDC Login| KC
     KC -->|Tokens| APP
     APP -->|RBAC Validation| USER
+## Project Screenshots
+
+### Keycloak Workforce Users
+
+![Keycloak Users](screenshots/keycloak-users.png)
+
+### OIDC Login and Role Display
+
+![FastAPI Role Display](screenshots/fastapi-role-display.png)
+
+### RBAC Enforcement
+
+![RBAC 403 Evidence](screenshots/rbac-403-terminal.png)
+
+### Lifecycle Automation
+
+![Lifecycle Automation](screenshots/lifecycle-automation.png)
