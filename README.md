@@ -56,3 +56,31 @@ flowchart TD
 ### Lifecycle Automation
 
 ![Lifecycle Automation](screenshots/lifecycle-automation.png)
+```mermaid
+flowchart TD
+    HR[HR / Workforce Event]
+    AUTO[Python IAM Automation]
+    API[Keycloak Admin API]
+    KC[Keycloak]
+    DB[(PostgreSQL)]
+    APP[FastAPI Application]
+    AUTH[OIDC / OAuth 2.0]
+    USERS[Workforce Users]
+    RBAC[RBAC Authorization]
+    JML[Joiner → Mover → Leaver]
+    AUDIT[Lifecycle Audit Logging]
+
+    HR --> AUTO
+    AUTO --> API
+    API --> KC
+
+    KC --> DB
+    KC --> APP
+
+    APP --> AUTH
+    AUTH --> USERS
+    USERS --> RBAC
+
+    JML --> AUTO
+    AUTO --> AUDIT
+```
