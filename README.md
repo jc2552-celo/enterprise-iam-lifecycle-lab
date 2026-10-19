@@ -1,6 +1,13 @@
 # Enterprise IAM Lifecycle Lab
 
-A hands-on Identity and Access Management project that demonstrates workforce identity lifecycle management, OpenID Connect authentication, role-based access control, automated provisioning, Joiner-Mover-Leaver workflows, service-account integration, and audit logging.
+## What I Built
+
+- Built a containerized IAM environment using Keycloak and PostgreSQL.
+- Integrated FastAPI with Keycloak using OpenID Connect and OAuth 2.0.
+- Implemented JWT-based role extraction and RBAC for Employee, Manager, and Admin access.
+- Automated Joiner-Mover-Leaver workflows through the Keycloak Admin API.
+- Used a dedicated service account for machine-to-machine IAM administration.
+- Added lifecycle audit logging and automated session termination during offboarding.A hands-on Identity and Access Management project that demonstrates workforce identity lifecycle management, OpenID Connect authentication, role-based access control, automated provisioning, Joiner-Mover-Leaver workflows, service-account integration, and audit logging.
 
 ## Project Overview
 
